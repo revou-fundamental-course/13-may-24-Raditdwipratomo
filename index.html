@@ -1,116 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini project Revou</title>
-    <link rel="stylesheet" href="/13-may-24-Raditdwipratomo/CSS/style.css"/>
-
-</head>
-<body>
-    <nav>
-    <div class="navbar">
-        <h1 class="welcome">Selamat datang di Segitiga App</h1>
-        <p>Hai, Selamat datang di segitiga App :]</p>
-        <p>Sebuah web sederhana yang berfungsi untuk menghitung Luas dan Keliling Segitiga</p>
-        <div class="btn">
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar">
+          <h1 class="welcome">Selamat datang di Segitiga App</h1>
+          <p>Hai, Selamat datang di segitiga App :]</p>
+          <p>
+            Sebuah web sederhana yang berfungsi untuk menghitung Luas dan
+            Keliling Segitiga
+          </p>
+          <div class="btn">
             <button id="btnLuas">Luas Segitiga</button>
-        <button id="btnKel">Keliling Segitiga</button>
+            <button id="btnKel">Keliling Segitiga</button>
+          </div>
         </div>
-    </div>
-    </nav>
-    <div id="luasPage"> 
-     <section>
-        <div>
-           <div class="judul">
-               <h1>Luas Segitiga</h1>
-           </div>
-           <div>
-               <div class="triangle">
-                   <img class= "segitiga" src="assets/segitiga.jpg">
-               </div>
-               <div class="judul-rumus">
-                   <p>Rumus Luas Segitiga Yaitu:</p>
-                   <p class="rumus">L= 1/2xaxt</p>
-               </div>
-            <div class="deskripsi">
-               <p>Di mana:
-               <p>L= Luas </p>
-               <p> a= Panjang Alas</p>
-               <p>t= Tinggi</p>
-           </div>
-            
-           </div>
-        </div>
-       </section>
-       <section>
-           <div class="content-hitung">
-               <h1>Hitung Luas Segitiga</h1>
-               <div class="input"> 
-                 <div class="input-alas">
-                    <input id="alas" type="number" inputmode="numeric" placeholder="Nilai Alas">
-                 </div>
-                 <div class="input-tinggi">
-                     <input id="tinggi" type="number" inputmode="numeric" placeholder="Nilai Tinggi">
-                 </div>
-                </div>
-                <div id="output"></div>
-                   <div class="btn-hitung">
-                       <button id="buttonLuas">Hitung</button>
-                   </div>
-                   <div class="btn-reset">
-                       <button onclick="resetLuas()">Reset</button>
-                   </div>
-           </div>
-       </section>
+      </nav>
+    </header>
+    <div id="luasPage">
+      <main>
+        <section>
+          <div>
+            <div class="judul">
+              <h1>Luas Segitiga</h1>
+            </div>
+            <div>
+              <div class="triangle">
+                <img class="segitiga" src="assets/segitiga.jpg" />
+              </div>
+              <div class="judul-rumus">
+                <p>Rumus Luas Segitiga Yaitu:</p>
+                <p class="rumus">L= 1/2xaxt</p>
+              </div>
+              <div class="deskripsi">
+                <p>Di mana:</p>
+                <p>L= Luas</p>
+                <p>a= Panjang Alas</p>
+                <p>t= Tinggi</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <aside>
+        <section>
+          <div class="content-hitung">
+            <h1>Hitung Luas Segitiga</h1>
+            <div class="input">
+              <div class="input-alas">
+                <input
+                  id="alas"
+                  type="number"
+                  inputmode="numeric"
+                  placeholder="Nilai Alas"
+                />
+              </div>
+              <div class="input-tinggi">
+                <input
+                  id="tinggi"
+                  type="number"
+                  inputmode="numeric"
+                  placeholder="Nilai Tinggi"
+                />
+              </div>
+            </div>
+            <div id="output"></div>
+            <div class="btn-hitung">
+              <button id="buttonLuas">Hitung</button>
+            </div>
+            <div class="btn-reset">
+              <button onclick="resetLuas()">Reset</button>
+            </div>
+          </div>
+        </section>
+      </aside>
     </div>
 
-    <div id="kelilingPage" style="display: none;"> 
+    <footer>
+      <div id="kelilingPage" style="display: none">
         <section>
-           <div>
-              <div class="judul">
-                  <h1>Keliling Segitiga</h1>
+          <div>
+            <div class="judul">
+              <h1>Keliling Segitiga</h1>
+            </div>
+            <div>
+              <div class="triangle">
+                <img class="segitiga" src="assets/segitiga.jpg" />
               </div>
-              <div>
-                  <div class="triangle">
-                      <img class= "segitiga"src="assets/segitiga.jpg">
-                  </div>
-                  <div class="judul-rumus">
-                      <p>Rumus Keliling Segitiga Yaitu:</p>
-                      <p class="rumus">K=S1+S2+S3</p>
-                  </div>
-               <div class="deskripsi">
-                  <p>Di mana:
-                  <p>K= Keliling </p>
-                  <p>S1= Sisi A</p>
-                  <p>S2= Sisi B</p>
-                  <p>S3= Sisi C</p>
+              <div class="judul-rumus">
+                <p>Rumus Keliling Segitiga Yaitu:</p>
+                <p class="rumus">K=S1+S2+S3</p>
               </div>
-               
+              <div class="deskripsi">
+                <p>Di mana:</p>
+                <p>K= Keliling</p>
+                <p>S1= Sisi A</p>
+                <p>S2= Sisi B</p>
+                <p>S3= Sisi C</p>
               </div>
-           </div>
-          </section>
-          <section>
-              <div class="content-hitung">
-                  <h1>Hitung Keliling Segitiga</h1>
-                  <div class="input"> 
-                      <div class="input-s1">
-                        <input type="number" id="s1" inputmode="numeric" placeholder="Nilai S1">
-                    </div>
-                      <div class="input-s2"><input id="s2" type="number" inputmode="numeric" placeholder="Nilai S2"></div>
-                      <div class="input-s3"><input id="s3" type="number" inputmode="numeric" placeholder="Nilai S3"></div>
-                  </div>
-                  <div id="outputkel"></div>
-                      <div class="btn-hitung">
-                          <button id="buttonKeliling">Hitung</button>
-                      </div>
-                      <div class="btn-reset">
-                          <button onclick="resetKeliling()">Reset</button>
-                      </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="content-hitung">
+            <h1>Hitung Keliling Segitiga</h1>
+            <div class="input">
+              <div class="input-s1">
+                <input
+                  type="number"
+                  id="s1"
+                  inputmode="numeric"
+                  placeholder="Nilai S1"
+                />
               </div>
-          </section>
-       </div>
-   
-</body>
-<script src="/13-may-24-Raditdwipratomo/JS/script.js"></script>
+              <div class="input-s2">
+                <input
+                  id="s2"
+                  type="number"
+                  inputmode="numeric"
+                  placeholder="Nilai S2"
+                />
+              </div>
+              <div class="input-s3">
+                <input
+                  id="s3"
+                  type="number"
+                  inputmode="numeric"
+                  placeholder="Nilai S3"
+                />
+              </div>
+            </div>
+            <div id="outputkel"></div>
+            <div class="btn-hitung">
+              <button id="buttonKeliling">Hitung</button>
+            </div>
+            <div class="btn-reset">
+              <button onclick="resetKeliling()">Reset</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </body>
+  <script src="./JS/script.js"></script>
 </html>
